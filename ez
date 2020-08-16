@@ -7,9 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: send custom message with args
+    - name: send message
       uses: appleboy/discord-action@master
       with:
         webhook_id: ${{ secrets.WEBHOOK_ID }}
         webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-        args: Heir to the cum throne.
+        color: "#FFC0CB"
+        username: "Test"
+        message: "Testing testing :O"
